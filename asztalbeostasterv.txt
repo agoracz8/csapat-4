@@ -1,0 +1,5 @@
+asztalbeosztás
+összesen 20
+10 kint 10 bent
+mint asztalnak van egy sorszáma az alapján lehet foglalni
+9 után a akinti asztalokra nem lehet fogalalni

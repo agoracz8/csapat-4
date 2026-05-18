@@ -1,0 +1,9 @@
+etterem nyitvatartas:
+
+Hetfo: 8:00-10:30 Reggeli, 13:00-16:30 Ebéd, 20:00-02:00 Vacsora
+Kedd: 8:00-10:30 Reggeli, 13:00-16:30 Ebéd, 20:00-02:00 Vacsora
+Szerda: 8:00-10:30 Reggeli, 13:00-16:30 Ebéd, 20:00-02:00 Vacsora
+Csutortok: 8:00-10:30 Reggeli, 13:00-16:30 Ebéd, 20:00-02:00 Vacsora
+Pentek: 8:00-10:30 Reggeli, 13:00-16:30 Ebéd, 20:00-02:00 Vacsora
+Szombat: 8:00-10:30 Reggeli, 13:00-16:30 Ebéd, 20:00-02:00 Vacsora
+Vasarnap: 8:00-10:30 Reggeli, 13:00-16:30 Ebéd, 20:00-02:00 Vacsora

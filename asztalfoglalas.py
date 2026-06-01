@@ -39,7 +39,7 @@ def nyitva_van(nap_nev, ido_str):
    for kezdet, veg in nyitvatartas[nap_nev]:
        kezdet_obj = datetime.strptime(kezdet, "%H:%M")
        veg_obj = datetime.strptime(veg, "%H:%M")
-       # éjfél átnyúlás
+
        if veg_obj < kezdet_obj:
            if ido_obj >= kezdet_obj or ido_obj <= veg_obj:
                return True
@@ -56,9 +56,9 @@ def asztal_foglalas():
            asztal = int(input("Asztal száma (1-20): "))
            if 1 <= asztal <= 20:
                break
-           print("❌ Az asztalszám 1 és 20 között lehet!")
+           print("Az asztalszám 1 és 20 között lehet!")
        except ValueError:
-           print("❌ Számot adj meg!")
+           print("Számot adj meg!")
 
    while True:
        datum = input("Dátum (YYYY-MM-DD): ")
@@ -66,7 +66,7 @@ def asztal_foglalas():
            datetime.strptime(datum, "%Y-%m-%d")
            break
        except ValueError:
-           print("❌ Hibás dátum!")
+           print("Hibás dátum!")
   
    while True:
        ido = input("Idő (HH:MM): ")
@@ -74,13 +74,13 @@ def asztal_foglalas():
            datetime.strptime(ido, "%H:%M")
            break
        except ValueError:
-           print("❌ Hibás idő!")
+           print("Hibás idő!")
 
    while True:
        nev = input("Foglaló neve: ").strip()
        if nev:
            break
-       print("❌ A név nem lehet üres!")
+       print("A név nem lehet üres!")
   
    napok_magyarul = {
        "Monday": "Hetfo",
@@ -93,9 +93,9 @@ def asztal_foglalas():
    }
    angol_nap = datetime.strptime(datum, "%Y-%m-%d").strftime("%A")
    nap_nev = napok_magyarul[angol_nap]
-   # --- NYITVATARTÁS ELLENŐRZÉS ---
+
    if not nyitva_van(nap_nev, ido):
-       print("❌ Ebben az időpontban zárva vagyunk.")
+       print("Ebben az időpontban zárva vagyunk.")
        print("Nyitvatartás:")
        for kezdet, veg in nyitvatartas[nap_nev]:
            print(f" - {kezdet} - {veg}")
@@ -109,6 +109,6 @@ def asztal_foglalas():
            return
    
    foglalas_mentese(asztal, datum, ido, nev)
-   print("✅ Sikeres foglalás!")
+   print("Sikeres foglalás!")
 
 asztal_foglalas()
